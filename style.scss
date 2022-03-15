@@ -1,0 +1,251 @@
+//FONT
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+// ## Colors
+
+// ### Primary
+:root{
+    --primary--Red: hsl(0, 100%, 74%);
+    --primary--Green: hsl(154, 59%, 51%);
+    
+    // ### Accent
+    
+--Accent-Blue: hsl(248, 32%, 49%);
+    
+    // ### Neutral
+    
+    --neutral-Dark-Blue: hsl(249, 10%, 26%);
+    --neutral-Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+@media (max-width: 375px){
+body{
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color:var(--primary--Red);
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h1{
+            color: white;
+            margin: 2.5rem;
+            font-weight: 600;
+        }
+        p{
+            color: white;
+            margin-bottom: 2rem;
+            // letter-spacing: 3px;
+            font-weight: 300;
+        }
+        .centerTextPurple{
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.411);
+            background-color: var(--Accent-Blue);
+            margin-left: 2rem;
+            margin-right: 1rem;
+        .textCuadrado{
+            b{
+                color: white;
+            }
+            // padding: 1rem;
+            color: rgb(209, 207, 207);
+            text-align:center;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+        .CenterForm{
+            align-items: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            margin: 1.5rem;
+            width: 60vh;
+                input{
+                    width: 250px;
+                    padding: 1.3rem;
+                    margin-top: 1.5rem;
+                    margin-left: 1rem;
+                    border-color: rgba(0, 0, 0, 0.116);
+                    &::placeholder{
+                        color:rgb(122, 121, 121);
+                        font-weight:600;
+                        font-size: 16px;
+                    }
+                 }
+                 .error{
+                     border: 2px solid var(--primary--Red);
+                     background: url('./images/icon-error.svg') no-repeat;
+                     background-position: 95% 50%;
+                 }
+                 .success{
+                     border: 2px solid green;
+                 }
+                 .succesSpan{
+                     visibility: hidden;
+                 }
+                 .error-text{
+                     color: var(--primary--Red);
+                     text-align: center;
+                     margin: 1rem;
+                 }
+            
+            .CenterBtn{
+            .BtnClaim{
+                width: 300px;
+                padding: 1rem;
+                margin-top: 1rem;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: white;
+                background-color: var(--primary--Green);
+                border: none;
+                box-shadow: 0px 2px 0px var(--neutral-Grayish-Blue);
+                border-radius: 5px;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        small{
+            padding: 1rem;
+            color: var(--neutral-Dark-Blue);
+            b{
+                color: var(--primary--Red);
+            }
+        }
+        }
+    }
+    }
+}
+}
+
+@media(min-width:1440px){
+    body{
+        background-image: url('/images/bg-intro-desktop.png');
+        background-color: var(--primary--Red)
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        .BoxTitle{
+            // margin: 1rem;
+            margin: auto 10rem;
+        h1{
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 46px;
+            font-weight: 700;
+        }
+        p{
+            color: white;
+            font-weight: 300;
+            font-size: 22px;
+        }
+    }
+
+        .CenterForm{
+            display: flex;
+            flex-direction: column;
+            .centerTextPurple{
+                text-align: center;
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.411);
+                background-color: var(--Accent-Blue);
+                margin-left: 2rem;
+                margin-right: 1rem;
+                margin-bottom: 2rem;
+            .textCuadrado{
+                b{
+                    color: white;
+                }
+                // padding: 1rem;
+                color: rgb(209, 207, 207);
+                text-align:center;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+            form{
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 500px;
+                border-radius: 10px;
+                input{
+                    padding: 1rem;
+                    width: 50vh;
+                    margin: 0.6rem;
+                }
+                label{
+                display: flex;
+                margin: 0.6rem;
+                flex-direction: column;
+                justify-content: center;    
+                .error-text{
+                    color: var(--primary--Red);
+                    text-align: end;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+            .CenterBtn{
+                .BtnClaim{
+                    background-color: var(--primary--Green);
+                    padding: 1rem;
+                    width: 55vh;
+                    border: none;
+                    margin-top: 1rem;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    color: white;
+                    background-color: var(--primary--Green);
+                    border: none;
+                    box-shadow: 0px 2px 0px var(--neutral-Grayish-Blue);
+                    border-radius: 5px;
+                }
+            }
+            small{
+                padding: 1rem;
+                color: var(--neutral-Dark-Blue);
+                b{
+                    color: var(--primary--Red);
+                }
+            }
+            .error{
+                border: 2px solid var(--primary--Red);
+                background: url('./images/icon-error.svg') no-repeat;
+                background-position: 95% 50%;
+            }
+            .success{
+                border: 2px solid green;
+            }
+            .succesSpan{
+                visibility: hidden;
+            }
+            }
+        }
+    }
+}
