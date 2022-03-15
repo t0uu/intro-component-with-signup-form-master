@@ -151,6 +151,143 @@ body {
   }
 }
 
+@media (min-width: 1366px) {
+  body {
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: var(--primary--Red);
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem;
+  }
+  main .BoxTitle {
+    margin: auto 10rem;
+  }
+  main .BoxTitle h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 46px;
+    font-weight: 700;
+  }
+  main .BoxTitle p {
+    color: white;
+    font-weight: 300;
+    font-size: 22px;
+  }
+  main .CenterForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .CenterForm .centerTextPurple {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.411);
+            box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.411);
+    background-color: var(--Accent-Blue);
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  main .CenterForm .centerTextPurple .textCuadrado {
+    color: #d1cfcf;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  main .CenterForm .centerTextPurple .textCuadrado b {
+    color: white;
+  }
+  main .CenterForm form {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+  }
+  main .CenterForm form input {
+    padding: 1rem;
+    width: 50vh;
+    margin: 0.6rem;
+  }
+  main .CenterForm form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .CenterForm form label .error-text {
+    color: var(--primary--Red);
+    text-align: end;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  main .CenterForm form .CenterBtn .BtnClaim {
+    background-color: var(--primary--Green);
+    padding: 1rem;
+    width: 55vh;
+    border: none;
+    margin-top: 1rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary--Green);
+    border: none;
+    -webkit-box-shadow: 0px 2px 0px var(--neutral-Grayish-Blue);
+            box-shadow: 0px 2px 0px var(--neutral-Grayish-Blue);
+    border-radius: 5px;
+  }
+  main .CenterForm form small {
+    padding: 1rem;
+    color: var(--neutral-Dark-Blue);
+  }
+  main .CenterForm form small b {
+    color: var(--primary--Red);
+  }
+  main .CenterForm form .error {
+    border: 2px solid var(--primary--Red);
+    background: url("./images/icon-error.svg") no-repeat;
+    background-position: 95% 50%;
+  }
+  main .CenterForm form .success {
+    border: 2px solid green;
+  }
+  main .CenterForm form .succesSpan {
+    visibility: hidden;
+  }
+}
+
 @media (min-width: 1440px) {
   body {
     background-image: url("/images/bg-intro-desktop.png");
